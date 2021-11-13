@@ -1,0 +1,11 @@
+f = 0.03
+k = 0.06
+
+startx = [5, 80, 5, 80, 40]
+starty = [5, 5, 80, 80, 40]
+widths = [10, 10, 10, 10, 20]
+depths = [10, 10, 10, 10, 20]
+
+for i in range(len(startx)):
+    B = seeding(B_no_seed, startx[i], starty[i], widths[i], depths[i])
+    B_no_seed = B
